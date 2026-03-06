@@ -15,9 +15,6 @@ $ python3 -m doctest wardial.py -v
 Test passed.
 
 $ python3 wardial.py
-scanning 127.0.0.0
-scanning 127.0.0.1
-scanning 127.0.0.2
-scanning 127.0.0.3
-...
+scanning complete
+ips_with_servers = [...]
 ```
