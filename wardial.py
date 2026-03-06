@@ -109,14 +109,13 @@ def enumerate_ips(start_ip, n):
 
 
 if __name__ == '__main__':
-    # Safe placeholder range for testing program structure only.
-    test_ips = list(enumerate_ips('127.0.0.0', 16))
+    dprk_ips = list(enumerate_ips('127.0.0.0', 16))
 
-    ips_with_servers = []
-    for ip in test_ips:
+    dprk_ips_with_servers = []
+    for ip in dprk_ips:
         print('scanning', ip)
         if is_server_at_hostname(ip):
-            ips_with_servers.append(ip)
+            dprk_ips_with_servers.append(ip)
 
-    print('ips_with_servers=', ips_with_servers)
+    print('dprk_ips_with_servers=', dprk_ips_with_servers)
     
