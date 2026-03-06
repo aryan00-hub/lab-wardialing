@@ -109,13 +109,16 @@ def enumerate_ips(start_ip, n):
 
 
 if __name__ == '__main__':
-    dprk_ips = list(enumerate_ips('127.0.0.0', 16))
+    # FIXME 1
+    dprk_ips = list(enumerate_ips('175.45.176.0', 1024))
 
+    # FIXME 2
     dprk_ips_with_servers = []
     for ip in dprk_ips:
-        print('scanning', ip)
+        print(f'scanning {ip} ...')   # optional but recommended
         if is_server_at_hostname(ip):
             dprk_ips_with_servers.append(ip)
 
     print('dprk_ips_with_servers=', dprk_ips_with_servers)
-    
+
+
